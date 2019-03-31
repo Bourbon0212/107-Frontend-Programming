@@ -8,7 +8,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/474e529f21.css">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/474e529f21.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- my CSS -->
   <link rel="stylesheet" href="index.css">
   <title>Bourbon's Resume</title>
@@ -17,56 +18,137 @@
 <body>
   <div id="header"></div>
   <div class="container">
-    <!-- Information Card -->
-    <div id="v-card" class="card center">
-      <div id="profile" class="right">
-        <img src="img/001.jpg" alt="profile-image" class="img-responsive">
-        <div class="slant"></div>
-      </div>
-      <div class="card-content">
-        <div class="info-headings">
-          <h3>BOURBON KUNG</h3>
-          <h5>Dept. of Geography, NTU</h5>
+    <div class="section">
+      <!-- Information Card -->
+      <div id="v-card" class="card center">
+        <div id="profile" class="right">
+          <img src="img/001.jpg" alt="profile-image" class="img-responsive">
         </div>
-        <div class="infos">
-          <ul class="profile-list">
-            <li class="clearfix">
-              <span class="title"><i class="material-icons">email</i></span>
-              <span class="content">b06208001@ntu.edu.tw</span>
-            </li>
-            <li class="clearfix">
-              <span class="title"><i class="material-icons">language</i></span>
-              <span class="content">https://bourbons-life.blogspot.com/</span>
-            </li>
-            <li class="clearfix">
-              <span class="title"><i class="material-icons">phone</i></span>
-              <span class="content">+886958059833</span>
-            </li>
-            <li class="clearfix">
-              <span class="title"><i class="material-icons">place</i></span>
-              <span class="content">No. 1, Sec. 4, Roosevelt Rd., Taipei</span>
-            </li>
-          </ul>
+        <div class="card-content">
+          <div class="info-headings">
+            <h3>BOURBON KUNG</h3>
+            <h6>Dept. of Geography, NTU</h6>
+          </div>
+          <div id="infos">
+            <ul class="profile-list">
+              <li class="clearfix">
+                <span class="title"><i class="material-icons">email</i></span>
+                <span class="content">b06208001@ntu.edu.tw</span>
+              </li>
+              <li class="clearfix">
+                <span class="title"><i class="material-icons">language</i></span>
+                <span class="content">https://bourbons-life.blogspot.com/</span>
+              </li>
+              <li class="clearfix">
+                <span class="title"><i class="material-icons">phone</i></span>
+                <span class="content">+886958059833</span>
+              </li>
+              <li class="clearfix">
+                <span class="title"><i class="material-icons">place</i></span>
+                <span class="content">No. 1, Sec. 4, Roosevelt Rd., Taipei</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div id="link">
+        <div id="link">
           <a href="#" class="btn btn-default btn-circle facebook">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fab fa-facebook-f"></i>
           </a>
           <a href="#" class="btn btn-default btn-circle instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fab fa-instagram"></i>
           </a>
           <a href="#" class="btn btn-default btn-circle github">
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fab fa-github-alt"></i>
           </a>
-          <!-- <a href="#" class="btn btn-default btn-circle line">
-            <i class="fab fa-line" aria-hidden="true"></i>
-          </a> -->
+        </div>
       </div>
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+    <div class="section">
+      <!-- Short Introduction -->
+      <div id="about" class="card center">
+        <div class="context">
+          <p>Hello! I’m Bourbon Kung. A college student from deparment of geography, National Taiwan Univeristy.
+            I major in Geographic Information Science, having statictics, cartography,
+            remote sensing and spatial analysis courses before. I'm a beginner for computer programming,
+            having basic knowledge of Python and R, and now focusing on Java and front end development.
+            I'm glad that I can work with you guys, and I hope that we can deal with the problem, and improve together.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div id="education" class="center">
+        <div class="section-title clearfix">
+          <div class="title-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h4>EDUCATION</h4>
+        </div>
+        <div id="timeline-education">
+          <div class="timeline-block clearfix">
+            <div class="timeline-icon">
+              <h6>E</h6>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-content">
+                <h6 class="timeline-title">Elementary School</h6>
+                <h6 class="timeline-info">Hu Shih Elementary School</h6>
+                <h6 class="timeline-info">2005 Sep. ~ 2011 Jun.</h6>
+                <p class="context">All my childhood memories are here!</p>
+                <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="https://www.hsps.tp.edu.tw/main/" role="button">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-block clearfix timeline-margin">
+            <div class="timeline-card1 card">
+              <div class="timeline-content">
+                <h6 class="timeline-title">Junior High School</h6>
+                <h6 class="timeline-info">Ren Ai Junior High School</h6>
+                <h6 class="timeline-info">2011 Sep. ~ 2014 Jun.</h6>
+                <p class="context">Three years of fun and happiness!</p>
+                <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="http://www.jajh.tp.edu.tw/bin/home.php" role="button">Learn More</a>
+              </div>
+            </div>
+            <div class="timeline-icon1">
+              <h6>J</h6>
+            </div>
+          </div>
+          <div class="timeline-block clearfix">
+            <div class="timeline-icon">
+              <h6>S</h6>
+            </div>
+            <div class="timeline-card card">
+              <div class="timeline-content">
+                <h6 class="timeline-title">Senior High School</h6>
+                <h6 class="timeline-info">Chien Kuo Senior High School</h6>
+                <h6 class="timeline-info">2014 Sep. ~ 2017 Jun.</h6>
+                <p class="context">Three years of dreamy and realistic life!</p>
+                <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="https://www2.ck.tp.edu.tw/" role="button">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-block clearfix timeline-margin">
+            <div class="timeline-card1 card">
+              <div class="timeline-content">
+                <h6 class="timeline-title">Deparment of Geography</h6>
+                <h6 class="timeline-info">National Taiwan University</h6>
+                <h6 class="timeline-info">2017 Sep. ~</h6>
+                <p class="context">I am here!</p>
+                <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="http://www.geog.ntu.edu.tw/index.php/tw/" role="button">Learn More</a>
+              </div>
+            </div>
+            <div class="timeline-icon1">
+              <h6>D</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
