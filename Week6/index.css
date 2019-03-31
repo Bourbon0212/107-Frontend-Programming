@@ -185,7 +185,11 @@ body {
   height: 200px;
   box-shadow: 2px 2px 4px;
   border-left: 5px solid #17a2b8;
-  position: relative;
+  background-image: url(./img/title-blur.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #timeline-education .timeline-block .timeline-card::before {
     content: '';
@@ -205,6 +209,11 @@ body {
   box-shadow: 2px 2px 4px;
   border-left: 5px solid #17a2b8;
   float: right;
+  background-image: url(./img/title-blur.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #timeline-education .timeline-block .timeline-card1::before {
     content: '';
