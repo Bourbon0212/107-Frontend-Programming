@@ -257,24 +257,6 @@ body {
   margin-right: 0px;
   float: right;
 }
-.section-title {
-  display: table;
-  margin: 0 auto;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
-  padding-bottom: 25px;
-  padding-top: 5px;
-}
-.section-title .title-icon {
-  display: block;
-  float: left;
-  color: #265460;
-  line-height: 38px;
-  font-size: 38px;
-  margin-right: 8px;
-}
-.section-title h4 {
-  float: right;
-}
 .timeline-top {
   margin-top: -75px;
 }
@@ -324,6 +306,55 @@ body {
 .fa-spin {
   animation: fa-spin 2s infinite linear;
 }
+#skills-detail{
+  margin-top: 30px;
+}
+.skill-item {
+  height: 480px;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: 2px 2px 4px;
+  background: #265460;
+}
+.skill-img {
+  width: 100%;
+  height: 60%;
+}
+.carousel-item img{
+  border-radius: .25rem;
+  background-color: #FFFFFF;
+}
+.card-deck {
+  width: 970px;
+  height: 480px;
+}
+.card-body .card-title {
+  text-align: center;
+  color: #c8d6e5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+.card-body .card-text {
+  text-align: center;
+  color: #c8d6e5;
+  font-size: 15px;
+  line-height: 25px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 25%;
+  width: 100px;
+  background-image: none;
+}
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 40px;
+  color: #265460;
+}
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: #265460;
+}
 /* FOR ALL */
 .right {
   float: right!important;
@@ -354,4 +385,22 @@ body {
 }
 .clearfix {
   clear: both;
+}
+.section-title {
+  display: table;
+  margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+.section-title .title-icon {
+  display: block;
+  float: left;
+  color: #265460;
+  line-height: 38px;
+  font-size: 38px;
+  margin-right: 8px;
+}
+.section-title h4 {
+  float: right;
 }
