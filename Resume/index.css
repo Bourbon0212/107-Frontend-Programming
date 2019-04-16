@@ -355,6 +355,57 @@ body {
   font-size: 40px;
   color: #265460;
 }
+/* FOR INTERESTS */
+#interests-card {
+  width: 940px;
+  height: 300px;
+  box-shadow: 2px 2px 4px;
+}
+#interests-card .row {
+  height: 50%;
+}
+#interests-card .col-up {
+  line-height: 60px;
+  text-align: center;
+  padding-top: 1%;
+  /* padding-bottom: 1%; */
+}
+#interests-card .col-btm {
+  line-height: 60px;
+  text-align: center;
+  padding-top: 4%;
+  /* padding-bottom: 1%; */
+}
+#interests-card .light {
+  background: #FFFFFF;
+  color: #265460;
+}
+#interests-card .dark {
+  background: #265460;
+  color: #c8d6e5;
+}
+#interests-card i {
+  display: block;
+  /* color: #265460; */
+  line-height: 38px;
+  font-size: 45px;
+  text-align: center;
+}
+#photography .card {
+  width: 940px;
+  height: 395px;
+  box-shadow: 2px 2px 4px;
+  background-image: url(./img/title-blur.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#photos img {
+  background: #FFFFFF00;
+}
+
+
 /* FOR ALL */
 .right {
   float: right!important;
@@ -403,4 +454,5 @@ body {
 }
 .section-title h4 {
   float: right;
+  line-height: 38px;
 }
