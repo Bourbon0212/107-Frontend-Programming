@@ -355,6 +355,46 @@ body {
   font-size: 40px;
   color: #265460;
 }
+/* FOR EXPERIENCE */
+#exp-card {
+  width: 940px;
+  height: 401px;
+  box-shadow: 2px 2px 4px;
+  background-image: url(./img/title-blur.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.exp-context {
+ padding: 35px 0px 35px 0px;
+}
+.exp-content .exp-info {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -8px;
+  color: #265460;
+}
+.exp-content h5 {
+  color: #265460;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+#exp-card .exp-upfig {
+  width: 469px;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(24% 0%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(24% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+#exp-card .exp-btmfig {
+  width: 469px;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 76% 100%, 0% 100%);
+}
+#exp-card img {
+  height: 200px;
+}
 /* FOR INTERESTS */
 #interests-card {
   width: 940px;
@@ -404,8 +444,20 @@ body {
 #photos img {
   background: #FFFFFF00;
 }
-
-
+/* FOR PRACTICE */
+#practice .card {
+  width: 940px;
+  height: 100px;
+  box-shadow: 2px 2px 4px;
+}
+#practice .row {
+  padding-top: 3.7%;
+  width: 100%;
+  text-align: center;
+}
+#practice a {
+    color: #265460;
+}
 /* FOR ALL */
 .right {
   float: right!important;
