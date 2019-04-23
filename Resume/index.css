@@ -28,6 +28,78 @@ body {
   /* Chrome, Opera */
   filter: blur(2px);
 }
+/* FOR SIDEBAR */
+.navbar {
+  position: fixed;
+  z-index: 99;
+  margin-top: 2%;
+  float: left;
+  color: #265460;
+}
+.navbar .btn {
+  color: #265460;
+  background-color: #FFFFFF00;
+  border-color: #265460;
+  border-width: thick;
+  box-shadow: 2px 2px 4px;
+}
+#sidebar {
+    position: fixed;
+    z-index: 100;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background: #c8d6e5;;
+    /* color: #265460; */
+    transition: all 0.3s;
+    margin-left: -100vw;
+    box-shadow: 2px 2px 4px;
+}
+
+#sidebar.active {
+    margin-left: 0px;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #265460;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 40px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a {
+    text-align: center;
+    color: #265460;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #FFFFFF;
+    background: #265460;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #FFFFFF;
+    background: #265460;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #265460;
+}
 
 /* FOR PROFILE */
 #v-card {
