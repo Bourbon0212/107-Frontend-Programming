@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- Material Design Lite -->
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-teal.min.css" />
   <!-- Material Design Lite Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Bootstrap CSS -->
@@ -18,6 +21,9 @@
 </head>
 
 <body>
+  <div id=loadingBg></div>
+  <div id=loadingTxt><span>BOURBON KUNG</span></div>
+  <div id="mdl_progress" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
   <div id="header">
     <div class="background"></div>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -27,7 +33,7 @@
         </button>
       </div>
     </nav>
-    <nav id="sidebar" class="sticky-top">
+    <nav id="sidebar">
       <div class="sidebar-header">
         <h1><i class="fas fa-chess-knight"></i></h1>
       </div>
@@ -433,21 +439,23 @@
               <p class="context">Staff of Big Data Student Competition</p>
               <p class="context">NSC - Earthquake Information Collection of School Buildings</p>
             </div>
-            <div class="right exp-upfig rounded-top">
-              <img src="img/PECU.png" alt="profile-image" class="img-responsive" style="margin-left: 90px;">
-            </div>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.peculab.org/">
+              <div class="right exp-upfig rounded-top">
+                <img src="img/PECU.png" alt="profile-image" class="img-responsive" style="margin-left: 90px;">
+              </div>
+            </a>
           </div>
           <div class="exp-content">
             <div class="left exp-btmfig rounded-bottom">
               <img src="img/HCI1.png" alt="profile-image" class="img-responsive" style="margin-left: 30px;">
             </div>
-            <div class="exp-context right" style="padding-right: 40px;">
+            <div class="right exp-context" style="margin-right: 20px;">
               <h5>NTUST, HCI Lab</h5>
               <div class="exp-info">
                 2018 Sep. ~
               </div>
               <p class="context">Conversation-based Disaster Report System</p>
-              <p class="context">Disaster Recovery Servie Plan of the Water Resources Department</p>
+              <p class="context">Disaster Recovery Plan of the Water Resources Department</p>
             </div>
           </div>
         </div>
@@ -573,7 +581,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- AOS animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+      AOS.init();
+    </script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!-- Other JS -->

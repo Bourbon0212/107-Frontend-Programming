@@ -1,8 +1,50 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
 body {
   background-color: #00418b0f;
-  font-family: Corbel;
+  font-family: 'Poppins', sans-serif;
 }
-
+/* Onload */
+#mdl_progress {
+  z-index: 5;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#loadingTxt {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  line-height: 47px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 39vh;
+  opacity: 0;
+  transition: .5s;
+  display: unset;
+}
+#loadingTxt span {
+  text-shadow: 2px 2px 4px #274526;
+}
+#loadingBg {
+  z-index: 4;
+  position: fixed;
+  background-color: #265460;
+  width: 100%;
+  height: 100%;
+  transition: 0s;
+  pointer-events: none;
+}
 .page {
   position: relative;
   margin-top: -30vh;
@@ -31,7 +73,7 @@ body {
 /* FOR SIDEBAR */
 .navbar {
   position: fixed;
-  z-index: 99;
+  z-index: 2;
   margin-top: 2%;
   float: left;
   color: #265460;
@@ -45,7 +87,7 @@ body {
 }
 #sidebar {
     position: fixed;
-    z-index: 100;
+    z-index: 3;
     min-width: 250px;
     max-width: 250px;
     min-height: 100vh;
@@ -141,7 +183,7 @@ ul ul a {
   display: block;
   width: 100%;
   font-weight: 400;
-  margin-top: -13px;
+  margin-top: -10px;
   margin-bottom: 30px;
   color: #c8d6e5;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
@@ -166,7 +208,6 @@ ul ul a {
   font-weight: 400;
   line-height: 29px;
   color: #c8d6e5;
-  font-family: Corbel;
 }
 
 #link {
@@ -213,7 +254,7 @@ ul ul a {
 /* FOR ABOUT */
 #about {
   width: 940px;
-  height: 200px;
+  height: 180px;
   box-shadow: 2px 2px 4px;
 }
 
@@ -524,6 +565,10 @@ ul ul a {
   background: #FFFFFF;
   -webkit-clip-path: polygon(24% 0%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(24% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.exp-upfig:hover {
+     opacity: 0.5;
 }
 
 #exp-card .exp-btmfig {
