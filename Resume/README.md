@@ -12,4 +12,5 @@ Animation：[https://github.com/michalsnik/aos](https://github.com/michalsnik/ao
 
 ### Reference
 [http://trimatrixlab.com/store/flatrica/index-video.html](http://trimatrixlab.com/store/flatrica/index-video.html)    
-But did not use his templates directly!   
+Since it's not a free template, I did not use it directly!   
+I imitate the design, and add some modifacation on my own.
