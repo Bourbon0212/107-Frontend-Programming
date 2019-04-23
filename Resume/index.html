@@ -10,17 +10,76 @@
   <!-- Font Awesome CDN -->
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/474e529f21.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- AOS animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- my CSS -->
   <link rel="stylesheet" href="index.css">
   <title>Bourbon's Resume</title>
 </head>
 
 <body>
-  <div id="header"></div>
+  <div id="header">
+    <div class="background"></div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+          <i class="fas fa-align-left"></i>
+          <span>Toggle Sidebar</span>
+        </button>
+      </div>
+    </nav>
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Bootstrap Sidebar</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <p>Dummy Heading</p>
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Home 1</a>
+            </li>
+            <li>
+              <a href="#">Home 2</a>
+            </li>
+            <li>
+              <a href="#">Home 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav> -->
+  </div>
   <div class="page">
     <div class="section">
       <!-- Information Card -->
-      <div id="v-card" class="card center">
+      <div id="v-card" class="card center" data-aos="fade-up">
         <div id="profile" class="right">
           <img src="img/001.jpg" alt="profile-image" class="img-responsive">
         </div>
@@ -65,7 +124,7 @@
     </div>
     <div class="section">
       <!-- Short Introduction -->
-      <div id="about" class="card center">
+      <div id="about" class="card center" data-aos="fade-up">
         <div class="context">
           <p>Hello! I’m Bourbon Kung. A college student from deparment of geography, National Taiwan Univeristy.
             I major in Geographic Information Science, having statictics, cartography,
@@ -77,16 +136,16 @@
     </div>
     <div class="section">
       <div id="education" class="center">
-        <div class="section-title clearfix">
+        <div class="section-title clearfix" data-aos="zoom-out">
           <div class="title-icon">
             <i class="fas fa-book"></i>
           </div>
           <h4>EDUCATION</h4>
         </div>
-        <div id="timeline-education">
+        <div id="timeline-education" data-aos="fade">
           <div class="timeline-block timeline-bot">
             <div class="timeline-hold">
-              <div class="timeline-card card">
+              <div class="timeline-card card" data-aos="fade-left">
                 <div class="timeline-content">
                   <h6 class="timeline-title">Deparment of Geography</h6>
                   <h6 class="timeline-info">National Taiwan University</h6>
@@ -95,14 +154,14 @@
                   <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="http://www.geog.ntu.edu.tw/index.php/tw/" role="button">Learn More</a>
                 </div>
               </div>
-              <div class="timeline-icon">
+              <div class="timeline-icon" data-aos="fade-up">
                 <h6>D</h6>
               </div>
             </div>
           </div>
           <div class="timeline-block timeline-top timeline-bot">
             <div class="timeline-hold hold-right">
-              <div class="timeline-card1 card">
+              <div class="timeline-card1 card" data-aos="fade-right">
                 <div class="timeline-content">
                   <h6 class="timeline-title">Senior High School</h6>
                   <h6 class="timeline-info">Chien Kuo Senior High School</h6>
@@ -111,14 +170,14 @@
                   <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="https://www2.ck.tp.edu.tw/" role="button">Learn More</a>
                 </div>
               </div>
-              <div class="timeline-icon1">
+              <div class="timeline-icon1" data-aos="fade-up">
                 <h6>S</h6>
               </div>
             </div>
           </div>
           <div class="timeline-block timeline-top timeline-bot">
             <div class="timeline-hold ">
-              <div class="timeline-card card">
+              <div class="timeline-card card" data-aos="fade-left">
                 <div class="timeline-content">
                   <h6 class="timeline-title">Junior High School</h6>
                   <h6 class="timeline-info">Ren Ai Junior High School</h6>
@@ -127,14 +186,14 @@
                   <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="http://www.jajh.tp.edu.tw/bin/home.php" role="button">Learn More</a>
                 </div>
               </div>
-              <div class="timeline-icon">
+              <div class="timeline-icon" data-aos="fade-up">
                 <h6>J</h6>
               </div>
             </div>
           </div>
           <div class="timeline-block timeline-top">
             <div class="timeline-hold hold-right">
-              <div class="timeline-card1 card">
+              <div class="timeline-card1 card" data-aos="fade-right">
                 <div class="timeline-content">
                   <h6 class="timeline-title">Elementary School</h6>
                   <h6 class="timeline-info">Hu Shih Elementary School</h6>
@@ -143,7 +202,7 @@
                   <a class="btn btn-info" target="_blank" rel="noopener noreferrer" href="https://www.hsps.tp.edu.tw/main/" role="button">Learn More</a>
                 </div>
               </div>
-              <div class="timeline-icon1">
+              <div class="timeline-icon1" data-aos="fade-up">
                 <h6>E</h6>
               </div>
             </div>
@@ -153,13 +212,13 @@
     </div>
     <div class="section">
       <div id="skills" class="center">
-        <div class="section-title clearfix">
+        <div class="section-title clearfix" data-aos="zoom-out">
           <div class="title-icon">
             <i class="fas fa-cogs"></i>
           </div>
           <h4>SKILLS</h4>
         </div>
-        <div id="skills-card" class="card center">
+        <div id="skills-card" class="card center" data-aos="fade-up">
           <div class="card-content row">
             <div class="col-4 card-row">
               <h5><i class="fas fa-tasks"></i> Professional</h5>
@@ -281,7 +340,7 @@
           </div>
         </div>
         <div id="skills-detail">
-          <div class="row card-deck center">
+          <div class="row card-deck center" data-aos="fade-up">
             <div class="card skill-item col-4">
               <div class="skill-img">
                 <div id="R-Skills" class="carousel slide" data-ride="carousel">
@@ -378,13 +437,13 @@
     </div>
     <div class="section">
       <div id="experience" class="center">
-        <div class="section-title clearfix">
+        <div class="section-title clearfix" data-aos="zoom-out">
           <div class="title-icon">
             <i class="far fa-plus-square"></i>
           </div>
           <h4>EXPERIENCE</h4>
         </div>
-        <div id="exp-card" class="center card">
+        <div id="exp-card" class="center card" data-aos="fade-up">
           <div class="exp-content">
             <div class="exp-context left" style="padding-left: 20px;">
               <h5>NTU, PecuLab</h5>
@@ -416,45 +475,45 @@
     </div>
     <div class="section">
       <div id="interest" class="center">
-        <div class="section-title clearfix">
+        <div class="section-title clearfix" data-aos="zoom-out">
           <div class="title-icon">
             <i class="far fa-heart"></i>
           </div>
           <h4>INTERESTS</h4>
         </div>
-        <div id="interests-card" class="card-block center rounded">
+        <div id="interests-card" class="card-block center rounded" data-aos="fade-up">
           <div class="row center">
-            <div class="col col-up light rounded">
+            <div class="col col-up light rounded" data-aos="flip-down" data-aos-delay="200">
               <div>Technology</div>
               <i class="fas fa-microchip"></i>
             </div>
-            <div class="col col-up dark rounded">
+            <div class="col col-up dark rounded" data-aos="flip-right" data-aos-delay="500">
               <div>Photography</div>
               <i class="fas fa-camera"></i>
             </div>
-            <div class="col col-up light rounded">
+            <div class="col col-up light rounded" data-aos="flip-right" data-aos-delay="800">
               <div>Swimming</div>
               <i class="fas fa-swimmer"></i>
             </div>
-            <div class="col col-up dark rounded">
+            <div class="col col-up dark rounded" data-aos="flip-right" data-aos-delay="1100">
               <div>Browsing</div>
               <i class="fas fa-globe"></i>
             </div>
           </div>
           <div class="row center no-gutters">
-            <div class="col col-btm dark rounded">
+            <div class="col col-btm dark rounded" data-aos="flip-down" data-aos-delay="500">
               <i class="fas fa-headphones-alt"></i>
               <div>Music</div>
             </div>
-            <div class="col col-btm light rounded">
+            <div class="col col-btm light rounded" data-aos="flip-down" data-aos-delay="800">
               <i class="fas fa-video"></i>
               <div>Movies</div>
             </div>
-            <div class="col col-btm dark rounded">
+            <div class="col col-btm dark rounded" data-aos="flip-down" data-aos-delay="1100">
               <i class="fas fa-shopping-cart"></i>
               <div>Shopping</div>
             </div>
-            <div class="col col-btm light rounded">
+            <div class="col col-btm light rounded" data-aos="flip-down" data-aos-delay="1400">
               <i class="fab fa-youtube"></i>
               <div>Youtube</div>
             </div>
@@ -464,13 +523,13 @@
     </div>
     <div class="section">
       <div id="photography" class="center">
-        <div class="section-title clearfix">
+        <div class="section-title clearfix" data-aos="zoom-out">
           <div class="title-icon">
             <i class="far fa-images"></i>
           </div>
           <h4>PHOTOGRAPHY</h4>
         </div>
-        <div class="card center">
+        <div class="card center" data-aos="fade-up">
           <div id="photos" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -506,13 +565,13 @@
     </div>
     <div class="section">
       <div id="practice" class="center">
-        <div class="section-title clearfix">
+        <div class="section-title clearfix" data-aos="zoom-out">
           <div class="title-icon">
             <i class="fas fa-file-alt"></i>
           </div>
           <h4>PRACTICE</h4>
         </div>
-        <div class="card center">
+        <div class="card center" data-aos="fade-up">
           <div class="row center">
             <div class="col">
               <a href="https://bourbon0212.github.io/107-Frontend-Programming/Week4/index.html">Curriculum</a>
@@ -527,6 +586,12 @@
         </div>
       </div>
     </div>
+
+    <!-- AOS animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
