@@ -9,5 +9,5 @@ Department：臺大地理二<br />
 FP_P1：[Curriculum Practice](https://bourbon0212.github.io/107-Frontend-Programming/Week4/index.html)    
 FP_P2：[CV Practice](https://bourbon0212.github.io/107-Frontend-Programming/Week5/index.html)    
 FP_P3：[Bootstrap Templates](https://bourbon0212.github.io/107-Frontend-Programming/Week6/index.html)    
-HW1：[Resume](https://bourbon0212.github.io/107-Frontend-Programming/Resume/index.html)
+HW1：[Resume](https://bourbon0212.github.io/107-Frontend-Programming/Resume/index.html)    
 HW2：[OnlineShop](https://bourbon0212.github.io/107-Frontend-Programming/OnlineShop/index.html)
