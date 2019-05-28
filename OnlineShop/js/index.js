@@ -65,7 +65,6 @@ $(document).ready(function() {
                 $('#num' + i).attr('class', 'page-item' + strActive)
             })
             var strActive = ((i == now) ? ' active' : '')
-            console.log(i);
             $li = $('<li>').attr('class', 'page-item' + strActive).attr('id', 'num' + i).append($a)
             $('#page-number').append($li)
         }
@@ -112,17 +111,13 @@ $(document).ready(function() {
     }
 
     $('#query').on('click', function() {
-        $.get('https://js.kchen.club/B12345678/query', function(response) {
+        $.get('https://js.kchen.club/B06208001/query', function(response) {
             if (response) {
                 // 伺服器有回傳資料
                 if (response.result) {
                     $('#product-list').empty();
                     // 資料庫有回傳資料
                     items = response.items
-
-                    // for (var i = 0; i < items.length; i++) {
-                    //     newItem(items[i])
-                    // }
 
                     // 加了分頁效果，預設顯示第一頁
                     showItems(1)
@@ -140,9 +135,44 @@ $(document).ready(function() {
                 $('#dialog').modal('show')
             }
 
-            console.log(response)
         }, "json")
         $('#query').addClass('active')
+    })
+
+    $('#searchBtn').on('click', function() {
+      $('#product-list').empty();
+      $('#page-number').empty();
+      var keyword = $('#search').val(); //取得搜尋關鍵字
+      var result = new Array(); //放搜尋結果
+      $.get('https://js.kchen.club/B06208001/query', function(response) {
+          if (response) {
+              // 伺服器有回傳資料
+              if (response.result) {
+                  $('#product-list').empty();
+                  // 資料庫有回傳資料
+                  items = response.items
+
+                  for(var i = 0; i < items.length; i++){
+                    if(items[i]['name'].indexOf(keyword) != -1){ // 有查詢關鍵字的加到result
+                      result.push(items[i]);
+                    }
+                  }
+
+                  for (var i = 0; i < result.length; i++) { //把result的結果秀出來
+                    newItem(result[i]);
+                  }
+
+              } else {
+                  $('#message').text('查無相關資料')
+                  $('#dialog').modal('show')
+              }
+          } else {
+              $('#message').text('伺服器出錯')
+              $('#dialog').modal('show')
+          }
+
+      }, "json")
+
     })
 
 })
